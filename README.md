@@ -1,27 +1,49 @@
-# MultiAngularAppsBoilerplate
+# Angular CLI
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
+#### Generate component with module and routing module
+```bash
+  ng generate module "file" --routing && ng generate component "file"
+```
 
-## Development server
+## Multi-project
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+#### Generate root angular app without application
+```bash
+  ng new "app name" --create-application=false
+```
 
-## Code scaffolding
+#### Generate each project
+```bash
+  ng generate application "project name"
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+#### Optional (VSCode Bugs)
+- Rename each project's` tsconfig.app.json` to `tsconfig.json`
+- Add `// @ts-ignore` for each import declared in `compilerOptions.paths` of each project's `tsconfig.json`
+- If encounter `Experimental decorators warning in TypeScript compilation`, refer here (https://stackoverflow.com/questions/38271273/experimental-decorators-warning-in-typescript-compilation)
 
-## Build
+### Core
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+#### Generate guard file without test file
+```bash
+  ng generate guard "file" --skip-tests
+```
+#### Generate interceptor file without test file
+```bash
+  ng generate interceptor "file" --skip-tests
+```
+#### Generate service file without test file
+```bash
+  ng generate service "file" --skip-tests
+```
 
-## Running unit tests
+### Environment
+#### Generate environment file
+```bash
+ng generate environments
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+#### Generate environment file (multi-project)
+```bash
+ng generate environments --project="project name"
+```
