@@ -40,10 +40,10 @@
 ### Environment
 #### Generate environment file
 ```bash
-ng generate environments
+  ng generate environments
 ```
 
 #### Generate environment file (multi-project)
 ```bash
-ng generate environments --project="project name"
+  ng generate environments --project="project name"
 ```
