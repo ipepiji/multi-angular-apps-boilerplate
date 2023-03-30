@@ -18,7 +18,7 @@ ng generate application "project name"
 ```
 
 #### Optional (VSCode Bugs)
-- Rename each project's` tsconfig.app.json` to `tsconfig.json`
+- Rename each project's `tsconfig.app.json` to `tsconfig.json` and rename angular.json's `projects."project name".architect.build.options.tsConfig`
 - Add `// @ts-ignore` for each import declared in `compilerOptions.paths` of each project's `tsconfig.json`
 - If encounter `Experimental decorators warning in TypeScript compilation`, refer here (https://stackoverflow.com/questions/38271273/experimental-decorators-warning-in-typescript-compilation)
 
