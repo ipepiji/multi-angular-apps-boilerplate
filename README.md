@@ -2,19 +2,19 @@
 
 #### Generate component with module and routing module
 ```bash
-  ng generate module "file" --routing && ng generate component "file"
+ng generate module "file" --routing && ng generate component "file"
 ```
 
 ## Multi-project
 
 #### Generate root angular app without application
 ```bash
-  ng new "app name" --create-application=false
+ng new "app name" --create-application=false
 ```
 
 #### Generate each project
 ```bash
-  ng generate application "project name"
+ng generate application "project name"
 ```
 
 #### Optional (VSCode Bugs)
@@ -26,24 +26,24 @@
 
 #### Generate guard file without test file
 ```bash
-  ng generate guard "file" --skip-tests
+ng generate guard "file" --skip-tests
 ```
 #### Generate interceptor file without test file
 ```bash
-  ng generate interceptor "file" --skip-tests
+ng generate interceptor "file" --skip-tests
 ```
 #### Generate service file without test file
 ```bash
-  ng generate service "file" --skip-tests
+ng generate service "file" --skip-tests
 ```
 
 ### Environment
 #### Generate environment file
 ```bash
-  ng generate environments
+ng generate environments
 ```
 
 #### Generate environment file (multi-project)
 ```bash
-  ng generate environments --project="project name"
+ng generate environments --project="project name"
 ```
